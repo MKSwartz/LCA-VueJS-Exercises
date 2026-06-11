@@ -99,7 +99,6 @@ body {
   border-color: var(--error);
 }
 
-/* ---------- TYPOGRAPHY ---------- */
 h1,
 h2,
 h3 {
@@ -112,7 +111,6 @@ h1 {
   letter-spacing: -0.5px;
 }
 
-/* ---------- RESPONSIVE HELPERS ---------- */
 @media (max-width: 700px) {
   #app {
     padding: var(--spacing-md);
