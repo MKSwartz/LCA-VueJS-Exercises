@@ -1,0 +1,134 @@
+:root {
+  --paper: #fefcf8 !important;
+  --ink: #2c2418 !important;
+  --ink-light: #6b5a4a !important;
+  --clay: #f4ede3 !important;
+  --clay-dark: #e8e0d6 !important;
+  --success: #2b6e3c !important;
+  --error: #b3412c !important;
+
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-mono: "SF Mono", "Courier New", monospace;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+}
+
+.artisan-label {
+  font-size: 0.65rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.tag {
+  background: var(--ink);
+  color: var(--paper);
+  padding: 0.2rem 0.6rem;
+  font-size: 0.7rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.btn-outline-custom {
+  background: transparent;
+  border: 2px solid var(--ink);
+  padding: 0.6rem 1.2rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.2s ease;
+  color: var(--ink);
+}
+
+.btn-outline-custom:hover:not(:disabled) {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.btn-solid-custom {
+  background: var(--ink);
+  border: 2px solid var(--ink);
+  padding: 0.6rem 1.2rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.2s ease;
+  color: var(--paper);
+}
+
+.btn-solid-custom:hover:not(:disabled) {
+  background: transparent;
+  color: var(--ink);
+}
+
+.badge-custom-success {
+  color: var(--success);
+  border: 1px solid var(--success);
+  background: transparent;
+}
+
+.badge-custom-error {
+  color: var(--error);
+  border: 1px solid var(--error);
+  background: transparent;
+}
+
+.ornament {
+  letter-spacing: 4px;
+}
+
+.card {
+  border: 2px solid var(--ink) !important;
+  border-radius: 0 !important;
+  background: var(--paper) !important;
+  box-shadow: var(--shadow-sm, 4px 4px 0 rgba(44, 36, 24, 0.08));
+  transition: all 0.2s ease;
+}
+
+.card:hover:not(.sold-out-card) {
+  transform: translate(-2px, -2px);
+  box-shadow: var(--shadow-md, 6px 6px 0 rgba(44, 36, 24, 0.1));
+}
+
+.btn {
+  border-radius: 0 !important;
+  font-family: var(--font-mono) !important;
+  font-size: 0.75rem !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+}
+
+.badge {
+  border-radius: 0 !important;
+  padding: 0.2rem 0.6rem !important;
+  font-weight: 500 !important;
+}
+
+.list-group-item {
+  border-radius: 0 !important;
+  border-color: var(--ink) !important;
+  background: transparent !important;
+}
+
+@media (max-width: 700px) {
+  body {
+    font-size: 14px;
+  }
+}
