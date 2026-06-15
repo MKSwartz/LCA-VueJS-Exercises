@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(145deg, #eff6f0 0%, #e2ebe4 100%);
+  font-family: "Poppins", "Inter", system-ui, "Segoe UI", sans-serif;
+  color: #1e2f2a;
+  scroll-behavior: smooth;
+  min-height: 100vh;
+}
+
+.zen-card {
+  background: rgba(255, 250, 240, 0.92);
+  backdrop-filter: blur(2px);
+  border-radius: 2rem;
+  border: 1px solid rgba(180, 210, 180, 0.5);
+  box-shadow:
+    0 20px 35px -12px rgba(60, 70, 55, 0.12),
+    0 2px 6px rgba(0, 0, 0, 0.02);
+  transition: all 0.2s ease;
+}
+
+.zen-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 24px 38px -16px rgba(70, 90, 60, 0.2);
+}
+
+.btn-zen {
+  border-radius: 60px;
+  padding: 0.55rem 1.5rem;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  transition: all 0.2s;
+  border: none;
+}
+
+.btn-zen-primary {
+  background: #5d8b6f;
+  color: white;
+  box-shadow: 0 4px 8px rgba(70, 110, 80, 0.2);
+}
+
+.btn-zen-primary:hover {
+  background: #467a5a;
+  transform: scale(0.97);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.btn-zen-outline {
+  background: transparent;
+  border: 1.5px solid #afc9b0;
+  color: #2c4a3b;
+}
+
+.btn-zen-outline:hover {
+  background: #ddebe0;
+  border-color: #7ba17b;
+}
+
+.btn-zen-danger {
+  background: #f4cfc7;
+  color: #aa5a4a;
+}
+
+.btn-zen-danger:hover {
+  background: #ebbfb4;
+  color: #8e4a3a;
+}
+
+.form-input-zen {
+  border-radius: 60px;
+  border: 1.5px solid #d7e3d4;
+  background: #ffffffe6;
+  padding: 0.7rem 1.2rem;
+  font-family: "Inter", monospace;
+  transition: 0.2s;
+  width: 100%;
+}
+
+.form-input-zen:focus {
+  border-color: #7daf84;
+  box-shadow: 0 0 0 4px rgba(93, 139, 111, 0.2);
+  outline: none;
+}
+
+.session-item {
+  background: #ffffffcc;
+  backdrop-filter: blur(4px);
+  border-radius: 1.5rem;
+  transition: all 0.15s;
+  border-left: 8px solid #9bc1a2;
+}
+
+.session-item:hover {
+  background: white;
+  transform: scale(1.01);
+}
+
+.empty-state {
+  background: rgba(235, 245, 230, 0.7);
+  border-radius: 2rem;
+  padding: 2.5rem;
+  text-align: center;
+  backdrop-filter: blur(2px);
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  letter-spacing: -0.2px;
+}
+
+.badge-soft {
+  background: #e3f0e3;
+  color: #2d6a4f;
+  border-radius: 50px;
+  padding: 0.25rem 0.9rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.footer-note {
+  font-size: 0.8rem;
+  color: #5f7c6b;
+}
+
+@media (max-width: 640px) {
+  .zen-card {
+    border-radius: 1.5rem;
+  }
+  .btn-zen {
+    padding: 0.45rem 1.2rem;
+  }
+  .display-5 {
+    font-size: 2rem;
+  }
+}
