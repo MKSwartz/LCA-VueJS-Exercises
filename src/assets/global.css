@@ -1,0 +1,121 @@
+:root {
+  --brut-black: #0d0d0d;
+  --brut-white: #fafaf8;
+  --brut-yellow: #e3c77b;
+  --brut-pink: #c27a7a;
+  --brut-blue: #6f7f8c;
+
+  --brut-border: 3px;
+
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-display);
+  background: var(--brut-white);
+  color: var(--brut-black);
+}
+
+h1,
+h2,
+h3,
+.display-font {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+
+.mono {
+  font-family: var(--font-mono);
+}
+
+.brut-border {
+  border: var(--brut-border) solid var(--brut-black);
+}
+
+.brut-shadow {
+  box-shadow: 8px 8px 0 var(--brut-black);
+}
+
+.brut-shadow-sm {
+  box-shadow: 4px 4px 0 var(--brut-black);
+}
+
+.btn-brut {
+  background-color: var(--brut-yellow);
+  border: var(--brut-border) solid var(--brut-black);
+  color: var(--brut-black);
+  font-family: var(--font-mono);
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 0.5rem 1.25rem;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+  box-shadow: 4px 4px 0 var(--brut-black);
+}
+
+.btn-brut:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 var(--brut-black);
+  background-color: var(--brut-yellow);
+  color: var(--brut-black);
+}
+
+.btn-brut:active {
+  transform: translate(0, 0);
+  box-shadow: 2px 2px 0 var(--brut-black);
+}
+
+.btn-brut-outline {
+  background-color: var(--brut-white);
+  border: var(--brut-border) solid var(--brut-black);
+  color: var(--brut-black);
+  font-family: var(--font-mono);
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 0.5rem 1.25rem;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+  box-shadow: 4px 4px 0 var(--brut-black);
+}
+
+.btn-brut-outline.active,
+.btn-brut-outline:hover {
+  background-color: var(--brut-pink);
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 var(--brut-black);
+}
+
+.form-control.brut-input {
+  border: var(--brut-border) solid var(--brut-black);
+  border-radius: 0;
+  font-family: var(--font-mono);
+  padding: 0.6rem 1rem;
+}
+
+.form-control.brut-input:focus {
+  box-shadow: none;
+  border-color: var(--brut-black);
+  outline: 3px solid var(--brut-yellow);
+  outline-offset: 0;
+}
+
+.section-title {
+  margin-bottom: 0.25rem;
+}
+
+.section-subtitle {
+  color: #555;
+  font-family: var(--font-mono);
+  margin-bottom: 2rem;
+}
